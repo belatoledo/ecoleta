@@ -1,0 +1,57 @@
+html { 
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ECCFFB ;
+}
+
+a {
+    text-decoration: none; /*tira o sublinhado do elemento da tag a */
+}
+
+/*BOX MODEL (Modelo de caixa)
+
+Toda caixa tem:
+Largura, altura, espaçamento, preenchimento, alinhamentos, 
+bordas, cor, fundo, maneira que é vista pelo html (display), posicionamento.
+
+box block: ocupa toda o espaço da linha e joga o próximo elemento para baixo
+box inline: fica do tamanho dela e se for ficar uma ao lado da outra as duas devem ser inline
+
+AMBOS OS MODELOS SÃO PARA MEXER NO LADO EXTERNO DA BOX*/
+
+#page-home {
+    height: 120vh;
+    background: url('../assets/home-background.svg') no-repeat; /*no-repeat para a imagem não se repetir na page */
+    background-position: 35vw bottom;
+}
+
+#page-home .content {
+    width:  90%; /* Porcentagem é dinâmico, px é fixo */
+    max-width: 1100px;
+    margin: 0px, auto;  /*top, right, bottom e left*/
+    
+}
+
+#page-home header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; /*alinha os itens dentro da caixa header*/
+    justify-content: space-between; /*justifica o conteudo dentor da caixa */
+}
+
+#page-home header a {
+    display: flex; /*é necessário colocar o display flex aqui para alinhar os elementos na tag span*/
+    color: #322153; /*cor da fonte do texto*/
+    font-weight: 700; /*peso da fonte negrito? normal? etc */
+}
+
+#page-home header a span{
+    margin-right: 16px;
+    background-image: url('../assets/log-in.svg');
+    width:  20px;
+    height: 20px;
+    display: flex;
+
+}
