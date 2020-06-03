@@ -3,11 +3,11 @@ html {
 }
 
 body{
-    background-color: #ECCFFB ;
+    background-color: #ECCFFB;
 }
 
 a {
-    text-decoration: none; /*tira o sublinhado do elemento da tag a */
+    text-decoration: none; /*tira o sublinhado do elemento da tag a (todas as  tags a)*/
 }
 
 /*BOX MODEL (Modelo de caixa)
